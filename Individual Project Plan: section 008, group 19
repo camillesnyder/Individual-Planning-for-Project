@@ -1,3 +1,7 @@
 I would like to investigate the general question 3, about which time windows are likely to be the most busy, posed by the research group led by Frank Wood. The specifc question I will answer based on their general question is: Can age and player experience predict session start time?
 The data from players.csv will give me the information about a player's age and their gaming experience. It is unclear whether the experience variable is based on general gaming experience or with Minecraft specific expertise. The sessions file will provide me with information about player's gaming session start times.
 In this case, I will probably wrangle the data from sessions.csv so that I have separate columns for date and time, because I am interested in the time and not necessarily the date of play. I will also convert the time colum so that the units are only in hours instead of both hours and minutes. I will change the player experience variable into a numerical variable with the highest number 5 representing "pro" players and the lowest number 1 representing "beginner" players, so that it can be used in regression calculations.
+```
+players_data <- read_csv("Individual-Planning-for-Project/players.csv")
+sessions_data <- read_csv("Individual-Planning-for-Project/sessions.csv")
+```
